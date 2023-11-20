@@ -34,7 +34,7 @@ class="alert alert-warning text-center">
         <td>{{ country.region}}</td>
         <td>{{ country.population}}</td>
         <td>
-          <a herf="#"> Ver más </a>
+          <a [routerLink]="['/countries/by/', country.cca3]" > Ver más </a>
         </td>
       </tr>
     </tbody>
